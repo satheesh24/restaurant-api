@@ -1,0 +1,14 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "app": {
+    "host": "localhost",
+    "database": "restaurantapi",
+    "username": "pguser",
+    "password": "pgpass",
+    "name": "app",
+    "connector": "postgresql"
+  }
+}

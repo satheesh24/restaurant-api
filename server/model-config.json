@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "app"
+  },
+  "AccessToken": {
+    "dataSource": "app",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "app",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "app",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "app",
+    "public": false
+  },
+  "Order": {
+    "dataSource": "app",
+    "public": true
+  },
+  "user": {
+    "dataSource": "app",
+    "public": true
+  }
+}
